@@ -1,0 +1,27 @@
+import java.lang.*;
+import java.util.*;
+
+public class Main{
+     public static void main(String[]args){
+         Scanner sc = new Scanner(System.in);
+         int N = sc.nextInt();
+         int sumeven=0;
+         int sumodd=0;
+         
+        for(int i=N;i>0;i/=10){
+            int a=i%10;
+        
+           if(a%2==0){
+                sumeven+=a;
+               }
+            else sumodd+=a;
+                
+        
+        }
+        System.out.println("Sum of Even Digit : "+sumeven);
+        System.out.println("Sum of Odd Digit : "+sumodd);
+       
+    
+     }   
+    
+}
